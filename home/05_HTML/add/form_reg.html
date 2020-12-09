@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Анкета</title>
+</head>
+<body>
+    <h2 align="center">Заполните анкету</h2>
+    <form action="http://fe.it-academy.by/TestForm.php" method="POST">
+        <fieldset>
+            <legend>Личные данные</legend>
+                <input type="text" pattern="[А-Яа-яЁё]{1,25}" name="фамилия" placeholder="Фамилия"  maxlength="25" required autofocus><br>
+                <input type="text" pattern="[А-Яа-яЁё]{1,20}" name="имя" placeholder="Имя"  maxlength="20" required><br>
+                <input type="text" pattern="[А-Яа-яЁё]{1,24}" name="отчество" placeholder="Отчество"  maxlength="24" required><br>
+            <fieldset>
+                <legend>Паспортные данные</legend>
+                    <input type="text" pattern="[A-Z]{2}" name="серия" placeholder="AA" maxlength="2" required><br>
+                    <input type="text" pattern="[0-9]{7}" name="номер" placeholder="1234567" maxlength="7" required>            
+            </fieldset>
+            <fieldset>
+                <legend>Дата рождения</legend>
+                    <input type="text" pattern="[0-9]{4}" name="год" placeholder="2000" maxlength="4"><br>
+                    <select name="месяц">
+                        <option value="1">Январь</option><option value="2">Февраль</option><option value="3">Март</option>
+                        <option value="4">Апрель</option><option value="5">Май</option><option value="6">Июнь</option>
+                        <option value="7">Июль</option><option value="8">Август</option><option value="9">Сентябрь</option>
+                        <option value="10">Октябрь</option><option value="11">Ноябрь</option><option value="12">Декабрь</option>
+                    </select><br>
+                    <input type="number" min="1" max="31" step="1" name="число">
+            </fieldset>
+                    <select name="национальность" required>
+                        <option value="РБ">РБ</option>
+                        <option value="РФ">РФ</option>
+                        <option value="КАЗ">КАЗ</option>
+                        <option value="УЗБ">УЗБ</option>
+                        <option value="УКР">УКР</option>
+                    </select><br>
+                    Адрес: <br>
+                    <textarea name="адрес" cols="20" rows="2"></textarea>            
+        </fieldset>
+        <input type="submit" name="click"  hidden="true">
+    </form>
+
+    <form action="http://fe.it-academy.by/TestForm.php" method="GET">
+        <fieldset>
+            <legend>Интересы</legend>
+                <fieldset>
+                    <legend>Хобби</legend>
+                        <input type="checkbox" name="хобби[]" value="Рыбалка">Рыбалка<br>
+                        <input type="checkbox" name="хобби[]" value="Астрономия">Астрономия<br>
+                        <input type="checkbox" name="хобби[]" value="Дайвинг">Дайвинг<br>
+                        <input type="checkbox" name="хобби[]" value="Марки">Марки<br>
+                </fieldset>
+                <fieldset>
+                    <legend>Домашние животные</legend>
+                        <select multiple name="list_anim[]" id="list" size="8">
+                            <optgroup label="Попугаи">
+                                <option value="Волнистый">Волнистый</option>
+                                <option value="Ара">Ара</option>
+                                <option value="Неразлучник">Неразлучник</option>
+                            </optgroup>
+                            <optgroup label="Рыба">
+                                <option value="Караси">Караси</option>
+                                <option value="Окуни">Окуни</option>
+                                <option value="Осётр">Осётр</option>
+                            </optgroup>
+                            <optgroup label="Птицы">
+                                <option value="Стая ворон">Стая ворон</option>
+                                <option value="Аист">Аист</option>
+                                <option value="Археоптерикс">Археоптерикс</option>
+                            </optgroup>
+                        </select>
+                </fieldset>
+        </fieldset>
+        <input type="submit" name="click"  hidden="true">
+    </form>
+
+    <form action="http://fe.it-academy.by/TestForm.php" method="POST">
+        <fieldset>
+            <legend>Данные для входа и восстановления пароля</legend>
+                <input type="text" pattern="[A-Za-z]{1,20}"  name="логин" placeholder="Логин"  minlength="5" maxlength="20" required><br>
+                <input type="text" pattern="[A-Za-z]{1,20}"  name="пароль" placeholder="Пароль"  minlength="10" required autocomplete="off"><br>
+        </fieldset>
+        <input type="submit" name="click"  hidden="true">
+    </form>
+    <form action="http://fe.it-academy.by/TestForm.php" method="POST">
+        <fieldset>
+            <legend>Координаты</legend>
+                <input type="email" pattern="^[^@\s]+@[^@\s]+\.[^@\s]+$" name="почта" placeholder="Введите адрес почты"><br>
+                <input type="url" name="сайт" placeholder="Введите адрес сайта"><br>
+        </fieldset>
+    </form>
+    <form action="http://fe.it-academy.by/TestForm.php" method="GET">
+        <fieldset>
+            <legend>Цифры</legend>           
+                <input type="number" name="цифры" min="-2.5" max="2.5" step="0.1"><br>
+                <input type="range" name="диапазон" min="1" max="10">
+        </fieldset>
+        <input type="submit" name="click"  hidden="true">
+    </form>
+    <form action="http://fe.it-academy.by/TestForm.php" method="GET">
+        <fieldset>
+            <legend>Кнопки управления</legend>           
+                <input type="submit" name="submit" value="Отправить">
+                <input type="reset" name="reset" value="Сбросить"><br>
+                <a href="" onclick="return false"><img src="email.jpg" alt="mail" title="Email"></a>
+        </fieldset>
+    </form>
+        
+</body>
+</html>
+
+
+
+
+
+
+
+
+
