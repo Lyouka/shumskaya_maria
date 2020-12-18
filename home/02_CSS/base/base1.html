@@ -1,0 +1,28 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Simple CSS Background Image Sprite</title>
+<style type="text/css">
+    div {
+        background-image: url(cards.png);
+        background-repeat: no-repeat;
+        height: 190px;
+        width: 145px;
+        display: inline-block;
+        margin-right: -50px;
+        }
+
+div.one {background-position: -140px -200px;}
+div.two {background-position: -435px -600px;}
+div.three {background-position: -285px -1400px;}
+
+</style>
+</head>
+ 
+<body>
+    <div class="one"></div>
+    <div class="two"></div>
+    <div class="three"></div>
+</body>
+</html>
