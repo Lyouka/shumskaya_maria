@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .leftblock {
+            width: 15em; 
+            background-color: rgb(168, 158, 158);
+            float: left;
+            }
+        .article {
+            background-color: grey; 
+            margin-bottom: .2em;
+            }
+        .bck {background-color: rgb(219, 219, 219);}
+        .no {list-style-type:none;
+            margin-left: none;}
+        .rightimg  {
+            float:right;
+           }
+        
+        .footer{background-color: rgb(168, 158, 158);}
+        
+    </style>
+    <title>Блоки</title>
+</head>
+<body>
+    <div class="bck">
+        <div class="leftblock ">
+            <h2>Блок навигации</h2>
+                <ul>
+                    <li>Ширина: 15em</li>
+                    <li>Должен присутствовать цвет фона</li>
+                    <li>Располагается слева</li>
+                    <li>Блок навигации наполните контентом, достаточным, чтобы по высоте он начинал захватывать вторую статью, как показано на данном примере  </li>
+                </ul>
+        </div>  
+
+        <div class="article"> 
+            <h2>Статья 1</h2>
+            <ul class="no">
+                <li>Размер блока:</li>
+                <li>Занимает всю доступную ширину</li>
+                <li>Должен присутствовать цвет фона</li>            
+                <li>Во всех "статьях" сделайте отступ снизу от соседней равным .2em, при помощи свойства margin-bottom</li>
+            </ul>
+            
+        </div>
+        <div style="margin-left: 15em" class="article"> 
+            <h2>Статья 2</h2>
+            <ul class="no">
+                <li>Размер блока:</li>       
+                <li>Занимает всю доступную ширину</li>
+                <li>Должен присутствовать цвет фона</li>            
+                <li>Во всех "статьях" сделайте отступ снизу от соседней равным .2em, при помощи свойства margin-bottom. 
+                    Картинка вставлена при помощи тега, плавание организованно по правому краю внутри данной статьи для этой картинки.
+                </li>
+            </ul>
+            <img src="icon_mail.png" class="rightimg">
+            <div style="clear: both"></div>
+            
+        </div>
+        <div class="footer">
+            Нижний блок, подвал. Занимает всю доступную ширину. Высота определяется помещенным внутрь контейнером.
+        </div>
+    </div>
+</body>
+</html>
