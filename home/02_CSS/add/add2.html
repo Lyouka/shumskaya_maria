@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .parent {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            background-color: rgb(219, 219, 219);
+        }
+        .child{
+            align-self: flex-start;
+            width:100%;
+            background-color: rgb(168, 158, 158);
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            background-color: grey; 
+            flex-basis: auto;
+            margin-bottom: .2em;
+            align-self: flex-start;
+        }    
+        
+        .break {
+            flex-basis: 100%;
+            height: .2em;
+            background-color: rgb(219, 219, 219);
+        }
+        .no {list-style-type:none; padding: 1px;}
+        .rightimg  {
+            display: flex;  
+            justify-content: flex-end;
+            }             
+    </style>
+    <title>Блоки</title>
+</head>
+<body>
+    <div class="parent">
+        <div class="child" style="width: 15em;">
+            <h2>Блок навигации</h2>
+                <ul>
+                    <li>Ширина: 15em</li>
+                    <li>Должен присутствовать цвет фона</li>
+                    <li>Располагается слева</li>
+                    <li>Блок навигации наполните контентом, достаточным, чтобы по высоте он начинал захватывать вторую статью, как показано на данном примере  </li>
+                </ul>
+        </div>  
+
+        <div class="container"> 
+            <div class="item"> 
+                <h2>Статья 1</h2>
+                <ul class="no">
+                    <li>Размер блока:</li>
+                    <li>Занимает всю доступную ширину</li>
+                    <li>Должен присутствовать цвет фона</li>            
+                    <li>Во всех "статьях" сделайте отступ снизу от соседней равным .2em, при помощи свойства margin-bottom</li>
+                </ul>
+            </div>
+            <div class="break">	&#160; </div>
+
+            <div class="item"> 
+                <h2>Статья 2</h2>
+                <ul class="no">
+                    <li>Размер блока:</li>       
+                    <li>Занимает всю доступную ширину</li>
+                    <li>Должен присутствовать цвет фона</li>            
+                    <li>Во всех "статьях" сделайте отступ снизу от соседней равным .2em, при помощи свойства margin-bottom. 
+                        Картинка вставлена при помощи тега, плавание организованно по правому краю внутри данной статьи для этой картинки.
+                    </li>
+                </ul>
+                <div class="rightimg">
+                    <img src="icon_mail.png" >
+                </div>
+            <div class="break"></div>
+            </div>
+        </div>
+    </div>
+    <div class="child">
+        Нижний блок, подвал. Занимает всю доступную ширину. Высота определяется помещенным внутрь контейнером. 
+    </div>
+</body>
+</html>
