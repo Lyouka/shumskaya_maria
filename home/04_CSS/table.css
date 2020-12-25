@@ -1,0 +1,31 @@
+table {
+    border-collapse: collapse;
+    border: 1px dotted black;
+}
+
+tr:nth-child(odd){
+    background-color: rgb(224, 224, 224);
+}
+
+th {
+    border: 1px dotted black;
+    text-align: left;
+}
+
+tr:first-child {
+    text-align: center;
+    background-color: grey;
+    color: white;
+}
+
+td {
+    border: 1px dotted black;
+}
+caption{
+    position: relative;
+    top: 150px;
+}
+tr:hover {
+    color: red;
+    cursor: pointer;
+}

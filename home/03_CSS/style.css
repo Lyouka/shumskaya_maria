@@ -1,0 +1,16 @@
+div.lvl1 > div {border-radius: 0.2em; 
+    background-color: rgb(245, 245, 244); 
+    border: solid rgb(0, 0, 0) 1px; 
+    cursor: pointer }        
+
+div.lvl2 {width: 115px; display: none;}
+
+div.lvl2 > div {border-radius: 0.2em; 
+    background-color: rgb(245, 245, 244); 
+    border: solid rgb(0, 0, 0) 1px; 
+    cursor: pointer}
+
+div.lvl1 > div:hover div.lvl2 {display: block; position: absolute; }
+
+.lvl1 div:hover {background-color: rgb(94, 94, 94)}
+

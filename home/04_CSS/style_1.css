@@ -1,0 +1,34 @@
+p>a[href$=".doc"] {
+    background: url(pic/logo-doc.jpg) no-repeat right;
+    padding-right: 0.5cm;
+   }
+
+p>a[href$=".pdf"] {
+    background: url(pic/logo-pdf.png) no-repeat right;
+    padding-right: 0.5cm;
+   }
+
+p>a[href$=".zip"] {
+    background: url(pic/logo-zip.gif) no-repeat right;
+    padding-right: 0.5cm;
+   }
+p>a[href^="https://"] {
+    background: url(pic/extref.png) no-repeat;
+    padding-left: 0.4cm;
+   }
+
+ul {
+    list-style-image: url(pic/logo-list.jpg);
+   }
+
+li a[href$=".pdf"]:hover {
+    background: url(pic/logo-pdf.png) no-repeat right;
+    padding-right: 0.5cm;}
+
+li a[href$=".doc"]:hover {
+     background: url(pic/logo-doc.jpg) no-repeat right;
+     padding-right: 0.5cm;}
+    
+li a[href$=".zip"]:hover {
+    background: url(pic/logo-zip.gif) no-repeat right;
+    padding-right: 0.5cm;}

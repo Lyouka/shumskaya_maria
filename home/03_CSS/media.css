@@ -1,0 +1,10 @@
+@media all and (min-width:820px) {
+    div.lvl1 {width: 800px; display: table;}
+    div.lvl1 > div {display: table-cell; width: 115px;}      
+}  
+
+@media all and (max-width:820px) {
+    div.lvl1 {width: 150px;}
+    div.lvl1 > div {width: 150px; position: relative;}
+    div.lvl1 > div:hover div.lvl2 {left: 80%; top: 90%; z-index: 1;}
+}
